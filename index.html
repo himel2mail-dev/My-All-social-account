@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Samiul Islam Himel - All Social Accounts</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Variables */
+        :root {
+            --primary-color: #00c6ff; 
+            --secondary-color: #0c1a2e; 
+            --text-color: #ffffff;
+            --facebook-color: #1877f2;
+            --x-color: #000000; 
+            --telegram-color: #2aabee;
+            --tiktok-color: #000000; /* পরিবর্তন: টিকটক কালো করা হলো */
+            --instagram-color: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            --whatsapp-color: #25d366;
+            --email-color: #d14836; /* পরিবর্তন: জিমেইল/স্ট্যান্ডার্ড লাল করা হলো */
+            --shadow-dark: 0 8px 30px rgba(0, 0, 0, 0.4);
+            --card-bg: rgba(26, 42, 64, 0.9);
+        }
+
+        /* 1. গ্লোইং ব্যাকগ্রাউন্ড অ্যানিমেশন */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d1a2f; 
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+            flex-direction: column;
+            padding: 20px;
+            
+            background: radial-gradient(circle at center, #1b385e 0%, #0d1a2f 70%);
+            animation: slowGlow 15s infinite alternate; 
+        }
+
+        @keyframes slowGlow {
+            0% { background-color: #0d1a2f; }
+            50% { background-color: #152b49; } 
+            100% { background-color: #0d1a2f; }
+        }
+
+        /* কার্ড বা প্রোফাইল কন্টেইনার স্টাইল */
+        .profile-container {
+            width: 90%;
+            max-width: 500px;
+            background-color: var(--card-bg);
+            border-radius: 25px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow-dark), 0 0 50px rgba(0, 198, 255, 0.3); 
+            text-align: center;
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 2. শিরনাম স্টাইল */
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 35px;
+            color: var(--primary-color);
+            text-shadow: 0 0 15px rgba(0, 198, 255, 0.7);
+            position: relative;
+        }
+        
+        /* সোশ্যাল লিংক স্টাইল */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            display: grid;
+            gap: 15px;
+        }
+
+        .social-link-item a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 15px;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: all 0.4s ease; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+            overflow: hidden; 
+            border: 2px solid transparent;
+        }
+
+        .social-link-item a i {
+            margin-right: 15px;
+            font-size: 1.4rem;
+            transition: transform 0.4s ease;
+            z-index: 3;
+        }
+        
+        /* 3. অ্যাপের নিজস্ব কালার */
+        .social-link-item a {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .facebook a { background-color: var(--facebook-color); }
+        .x-twitter a { background-color: var(--x-color); border: 2px solid #fff; } 
+        .telegram a { background-color: var(--telegram-color); }
+        .tiktok a { 
+            background-color: var(--tiktok-color); 
+            /* TikTok-এর জন্য টেক্সট ও আইকন কালার সাদা করা হলো */
+            color: #ffffff; 
+        } 
+        .instagram a { background: var(--instagram-color); border: none; }
+        .whatsapp a { background-color: var(--whatsapp-color); }
+        .email a { background-color: var(--email-color); }
+
+        /* হোভার ইফেক্ট */
+        .social-link-item a:hover {
+            transform: translateY(-5px) scale(1.05);
+            opacity: 0.9;
+            box-shadow: 0 10px 40px rgba(0, 198, 255, 0.5);
+        }
+        
+        /* লিকুইড ফিল ইফেক্ট বাদ দেওয়া হয়েছে */
+        .liquid-fill {
+            display: none; 
+        }
+
+        .social-link-item a:hover i {
+            transform: scale(1.15);
+        }
+
+        /* 4. কপিরাইট অ্যানিমেশন */
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            position: relative;
+        }
+
+        .copyright span {
+            display: inline-block;
+            animation: colorChange 5s infinite alternate;
+        }
+
+        @keyframes colorChange { 0% { color: #00c6ff; } 33% { color: #ff007b; } 66% { color: #00ff88; } 100% { color: #ffa500; } }
+        
+        .year-animation { 
+            display: inline-block; font-weight: 700; margin-left: 5px; position: relative; overflow: hidden; line-height: 1.2; height: 1.2em; width: 45px; vertical-align: middle; 
+        }
+        .year-animation span { position: absolute; top: 0; left: 0; opacity: 0; animation: yearSlide 5s infinite; }
+        .year-animation span:nth-child(1) { animation-delay: 0s; }
+        .year-animation span:nth-child(2) { animation-delay: 1s; }
+        .year-animation span:nth-child(3) { animation-delay: 2s; }
+        .year-animation span:nth-child(4) { animation-delay: 3s; }
+        .year-animation span:nth-child(5) { animation-delay: 4s; }
+        @keyframes yearSlide { 0%, 10% { transform: translateY(0); opacity: 1; } 20% { transform: translateY(-100%); opacity: 0; } 80%, 100% { transform: translateY(100%); opacity: 0; } }
+    </style>
+    </head>
+<body>
+
+    <div class="profile-container">
+        <header class="header">
+            <h1>All social accounts of MD. Samiul Islam Himel</h1>
+        </header>
+
+        <ul class="social-links">
+            <li class="social-link-item x-twitter">
+                <a href="https://x.com/islam_hime37923" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-x-twitter"></i> 
+                    X (Twitter)
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+            
+            <li class="social-link-item facebook">
+                <a href="https://www.facebook.com/share/17TaRtiD3A/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+            
+            <li class="social-link-item telegram">
+                <a href="t.me/SH_Himel_official" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-telegram-plane"></i>
+                    Telegram
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+
+            <li class="social-link-item tiktok">
+                <a href="https://www.tiktok.com/@sh_himel_official" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i>
+                    TikTok
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+            
+            <li class="social-link-item instagram">
+                <a href="https://www.instagram.com/sh_himel_official?igsh=MXFvdDJyd21xaG4yZA==" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+            
+            <li class="social-link-item whatsapp">
+                <a href="https://wa.me/8801873228584" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+            
+            <li class="social-link-item email">
+                <a href="mailto:samiulmnw9@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    Email (samiulmnw9@gmail.com)
+                    <span class="liquid-fill"></span>
+                </a>
+            </li>
+        </ul>
+
+        <footer class="copyright">
+            &copy; <span class="year-animation">
+                <span>2025</span>
+                <span>2026</span>
+                <span>2027</span>
+                <span>2028</span>
+                <span>2029</span>
+            </span> Samiul Islam Himel. 
+            <span>All Rights Reserved.</span>
+        </footer>
+    </div>
+
+</body>
+</html>
